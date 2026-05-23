@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Cairo", "Tajawal", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f1f5f9;
+  font-size: 17px;
+  font-weight: 600;
+  color: #000;
+}
+
+button {
+  transition: transform 0.18s ease, box-shadow 0.24s ease, filter 0.18s ease, opacity 0.18s ease;
+  transform-origin: center;
+}
+
+button:not(:disabled):hover {
+  transform: translateY(-2px) scale(1.01);
+  filter: brightness(1.07) saturate(1.05);
+  box-shadow: 0 12px 20px rgba(15, 23, 42, 0.18) !important;
+}
+
+button:not(:disabled):active {
+  transform: translateY(0) scale(0.98);
+  filter: brightness(0.98) saturate(1);
+}
+
+button:focus-visible {
+  outline: 3px solid rgba(30, 64, 175, 0.45);
+  outline-offset: 2px;
+}
+
+button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.file-upload-btn {
+  transition: transform 0.18s ease, box-shadow 0.24s ease, filter 0.18s ease, opacity 0.18s ease;
+  transform-origin: center;
+}
+
+.file-upload-btn:hover {
+  transform: translateY(-2px) scale(1.01);
+  filter: brightness(1.07) saturate(1.05);
+  box-shadow: 0 12px 20px rgba(15, 23, 42, 0.18) !important;
+}
+
+.file-upload-btn:active {
+  transform: translateY(0) scale(0.98);
+  filter: brightness(0.98) saturate(1);
+}
